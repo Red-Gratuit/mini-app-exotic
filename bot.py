@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Le Shop De Le B - Bot Telegram en Python
+Le Shop De exotic62599 - Bot Telegram en Python
 Compatible avec webhooks pour Railway
 """
 
@@ -11,12 +11,12 @@ import os
 
 # Configuration
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
-MINI_APP_URL = os.environ.get('MINI_APP_URL', 'https://web-production-77d3d.up.ra')
+MINI_APP_URL = os.environ.get('MINI_APP_URL', '')
 # S'assurer que l'URL a le protocole HTTPS
 if MINI_APP_URL and not MINI_APP_URL.startswith('https://'):
     MINI_APP_URL = 'https://' + MINI_APP_URL
-CANAL_URL = 'https://t.me/LeShopDeLeB'
-CONTACT_URL = 'https://snapchat.com/add/leb6259secours'
+CANAL_URL = ''
+CONTACT_URL = ''
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 def send_message(chat_id, text, reply_markup=None):
@@ -62,7 +62,7 @@ def send_photo(chat_id, caption, reply_markup=None):
 def handle_start(chat_id):
     """Gérer la commande /start"""
     print(f"🎯 Traitement /start pour chat_id: {chat_id}")
-    caption = """🌟 BIENVENUE CHEZ LE SHOP DE LE B 🌟
+    caption = """🌟 BIENVENUE CHEZ LE SHOP DE exotic62599 🌟
 NOUS TE LAISSONS NAVIGUER SUR NOTRE MINI-APP 📱
 🔥 Produits Premium - 59-62 🔥"""
     
@@ -97,7 +97,7 @@ NOUS TE LAISSONS NAVIGUER SUR NOTRE MINI-APP 📱
     if not result or not result.get('ok'):
         # Fallback: envoyer juste le texte
         print("⚠️ Photo échouée, envoi texte")
-        send_message(chat_id, f"🌟 **BIENVENUE CHEZ LE SHOP DE LE B** 🌟\n\n{caption}", json.dumps(reply_markup))
+        send_message(chat_id, f"🌟 **BIENVENUE CHEZ LE SHOP DE exotic62599** 🌟\n\n{caption}", json.dumps(reply_markup))
 
 def handle_message(update):
     """Gérer les messages entrants"""
@@ -117,7 +117,7 @@ def handle_message(update):
         handle_start(chat_id)
     else:
         print("❓ Commande inconnue")
-        send_message(chat_id, 'Utilisez /start pour accéder à la mini-app Le Shop De Le B 🌿')
+        send_message(chat_id, 'Utilisez /start pour accéder à la mini-app Le Shop De exotic62599 🌿')
 
 def set_webhook(webhook_url):
     """Configurer le webhook"""

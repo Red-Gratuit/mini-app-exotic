@@ -1,4 +1,4 @@
-# Le Shop De Le B - Mini App Telegram (Optimisé iPhone) 📱
+# Le Shop De exotic62599 - Mini App Telegram (Optimisé iPhone) 📱
 
 Application Mini App Telegram optimisée pour iPhone avec interface agrandie et fond d'arrière-plan.
 
@@ -74,7 +74,7 @@ Activez GitHub Pages dans Settings.
 vercel deploy
 ```
 
-### 3. Déployer le Backend
+### 3. Déployer exotic62599ackend
 
 **Heroku:**
 ```bash

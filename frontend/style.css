@@ -1,16 +1,16 @@
 :root {
-  --tg-theme-bg-color: #000000;
-  --tg-theme-text-color: #ffffff;
-  --tg-theme-hint-color: #8e8e93;
-  --primary-gradient: linear-gradient(135deg, #ff3b30 0%, #ff2d55 100%);
-  --card-bg: rgba(28, 28, 30, 0.8);
-  --card-hover: rgba(44, 44, 46, 0.9);
-  --accent-color: #ff3b30;
-  --secondary-color: #ff2d55;
-  --glow-color: rgba(255, 59, 48, 0.3);
-  --apple-gray: #1c1c1e;
-  --apple-gray-light: #2c2c2e;
-  --apple-separator: rgba(255, 255, 255, 0.1);
+  --tg-theme-bg-color: #0a0a0a;
+  --tg-theme-text-color: #f5f5f5;
+  --tg-theme-hint-color: #c5a028;
+  --primary-gradient: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #C5A028 100%);
+  --card-bg: rgba(20, 20, 20, 0.9);
+  --card-hover: rgba(30, 30, 30, 0.95);
+  --accent-color: #D4AF37;
+  --secondary-color: #FFD700;
+  --glow-color: rgba(212, 175, 55, 0.4);
+  --apple-gray: #1a1a1a;
+  --apple-gray-light: #2d2d2d;
+  --apple-separator: rgba(212, 175, 55, 0.2);
 }
 
 * {
@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
-  background: #000000;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
   color: var(--tg-theme-text-color);
   overflow-x: hidden;
   min-height: 100vh;
@@ -41,7 +41,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: #000000;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,14 +70,14 @@ body {
   max-width: 400px;
   height: auto;
   border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4), 0 0 40px rgba(118, 75, 162, 0.3);
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.5), 0 0 40px rgba(255, 215, 0, 0.3);
   animation: splashGlow 2s ease-in-out infinite alternate;
   margin-bottom: 40px;
 }
 
 @keyframes splashGlow {
-  from { box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4), 0 0 40px rgba(118, 75, 162, 0.3); }
-  to { box-shadow: 0 25px 70px rgba(102, 126, 234, 0.6), 0 0 60px rgba(118, 75, 162, 0.5); }
+  from { box-shadow: 0 20px 60px rgba(212, 175, 55, 0.5), 0 0 40px rgba(255, 215, 0, 0.3); }
+  to { box-shadow: 0 25px 70px rgba(212, 175, 55, 0.7), 0 0 60px rgba(255, 215, 0, 0.5); }
 }
 
 .splash-loader {
@@ -94,7 +94,7 @@ body {
   background: var(--primary-gradient);
   border-radius: 10px;
   animation: loadingBar 2.5s ease-in-out;
-  box-shadow: 0 0 20px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
 }
 
 @keyframes loadingBar {
@@ -117,7 +117,7 @@ body {
 .background {
   position: fixed;
   inset: 0;
-  background: #000000;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
   z-index: -2;
 }
 
@@ -130,7 +130,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(255, 59, 48, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
 }
 
 @keyframes gradientPulse {
@@ -165,14 +165,14 @@ header {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid transparent;
-  background: linear-gradient(#1a1a2e, #1a1a2e) padding-box, var(--primary-gradient) border-box;
-  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4), 0 0 20px rgba(118, 75, 162, 0.3);
+  background: linear-gradient(#0a0a0a, #0a0a0a) padding-box, var(--primary-gradient) border-box;
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5), 0 0 20px rgba(255, 215, 0, 0.3);
   animation: logoGlow 3s ease-in-out infinite;
 }
 
 @keyframes logoGlow {
-  0%, 100% { box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4), 0 0 20px rgba(118, 75, 162, 0.3); }
-  50% { box-shadow: 0 10px 40px rgba(102, 126, 234, 0.6), 0 0 30px rgba(118, 75, 162, 0.5); }
+  0%, 100% { box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5), 0 0 20px rgba(255, 215, 0, 0.3); }
+  50% { box-shadow: 0 10px 40px rgba(212, 175, 55, 0.7), 0 0 30px rgba(255, 215, 0, 0.5); }
 }
 
 .logo-container-small {
@@ -187,8 +187,8 @@ header {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid transparent;
-  background: linear-gradient(rgba(15, 15, 30, 0.55), rgba(15, 15, 30, 0.55)) padding-box, var(--primary-gradient) border-box;
-  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+  background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)) padding-box, var(--primary-gradient) border-box;
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
 }
 
 h1 {
@@ -251,7 +251,7 @@ h1 {
   position: absolute;
   inset: 0;
   border-radius: 20px;
-  background: radial-gradient(circle, rgba(255, 59, 48, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -262,7 +262,7 @@ h1 {
 
 .cat.active {
   background: var(--primary-gradient);
-  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.4);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5);
 }
 
 .products {
@@ -304,7 +304,7 @@ h1 {
   background: var(--primary-gradient);
   opacity: 0;
   transition: opacity 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 .card:active::before {
@@ -320,7 +320,7 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 59, 48, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -355,7 +355,7 @@ h1 {
 }
 
 .card:hover h2 {
-  color: #ff3b30;
+  color: #D4AF37;
 }
 
 .card-info {
@@ -477,13 +477,13 @@ h1 {
   height: 35px;
   border-radius: 50%;
   background: var(--primary-gradient);
-  color: white;
+  color: #0a0a0a;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   font-size: 1.1rem;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
 }
 
 .step-icon {
@@ -556,9 +556,9 @@ h1 {
   background: rgba(20, 20, 20, 0.9);
   border-radius: 15px;
   padding: 20px;
-  border: 2px solid rgba(255, 0, 0, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.3);
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.15);
 }
 
 .faq-item:hover {
@@ -595,12 +595,12 @@ h1 {
   border-radius: 20px;
   padding: 32px 24px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(255, 59, 48, 0.4);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.5);
 }
 
 @keyframes ctaPulse {
-  0%, 100% { box-shadow: 0 15px 50px rgba(255, 0, 0, 0.5), 0 0 60px rgba(255, 0, 0, 0.3); }
-  50% { box-shadow: 0 20px 60px rgba(255, 0, 0, 0.7), 0 0 80px rgba(255, 0, 0, 0.4); }
+  0%, 100% { box-shadow: 0 15px 50px rgba(212, 175, 55, 0.5), 0 0 60px rgba(255, 215, 0, 0.3); }
+  50% { box-shadow: 0 20px 60px rgba(212, 175, 55, 0.7), 0 0 80px rgba(255, 215, 0, 0.4); }
 }
 
 .cta-card h2 {
@@ -618,16 +618,16 @@ h1 {
 
 .cta-button {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.95);
-  color: #ff3b30;
+  background: rgba(10, 10, 10, 0.95);
+  color: #D4AF37;
   padding: 14px 32px;
   border-radius: 12px;
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: none;
+  border: 2px solid #D4AF37;
 }
 
 .cta-button:hover,
@@ -668,9 +668,9 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid rgba(255, 0, 0, 0.4);
+  border-top: 1px solid rgba(212, 175, 55, 0.4);
   z-index: 999;
-  box-shadow: 0 -4px 20px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 -4px 20px rgba(212, 175, 55, 0.2);
 }
 
 .nav-item {
@@ -695,7 +695,7 @@ h1 {
 }
 
 .nav-item.active {
-  color: #ff3b30;
+  color: #D4AF37;
 }
 
 .nav-item.action {
@@ -704,12 +704,12 @@ h1 {
   height: 72px;
   border-radius: 50%;
   background: var(--primary-gradient);
-  color: white;
+  color: #0a0a0a;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.5);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.5);
   transform: translateY(-18px);
 }
 
@@ -894,7 +894,7 @@ input, select, textarea {
   right: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 0, 0, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
   animation: rotateGlow 10s linear infinite;
 }
 
@@ -906,13 +906,13 @@ input, select, textarea {
 .highlight-badge {
   display: inline-block;
   background: var(--primary-gradient);
-  color: white;
+  color: #0a0a0a;
   padding: 8px 20px;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
 }
 
 .product-highlight-card h2 {
@@ -1268,20 +1268,20 @@ img {
 
 .admin-btn {
   background: var(--primary-gradient);
-  color: white;
+  color: #0a0a0a;
   border: none;
   padding: 12px 20px;
   border-radius: 12px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-size: 0.9rem;
-  box-shadow: 0 2px 8px rgba(255, 59, 48, 0.4);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.5);
 }
 
 .admin-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.5);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.6);
 }
 
 .admin-btn:hover {
@@ -1303,8 +1303,8 @@ img {
 }
 
 .admin-btn-small.delete {
-  background: rgba(255, 59, 48, 0.1);
-  color: #ff3b30;
+  background: rgba(212, 175, 55, 0.1);
+  color: #D4AF37;
 }
 
 .admin-btn-small:hover {
@@ -1381,7 +1381,7 @@ img {
 .admin-review-product {
   margin-bottom: 12px;
   padding: 8px 12px;
-  background: rgba(255, 59, 48, 0.1);
+  background: rgba(212, 175, 55, 0.1);
   border-radius: 8px;
 }
 

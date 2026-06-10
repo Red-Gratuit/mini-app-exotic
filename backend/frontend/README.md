@@ -74,7 +74,7 @@ Activez GitHub Pages dans Settings.
 vercel deploy
 ```
 
-### 3. Déployer le Backend
+### 3. Déployer exotic62599ackend
 
 **Heroku:**
 ```bash

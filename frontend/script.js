@@ -779,7 +779,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', startAudioOnFirstInteraction, { once: true });
   document.body.addEventListener('touchstart', startAudioOnFirstInteraction, { once: true });
   
-  // Initialiser le bouton de contrôle
+  // Initialiser exotic62599outon de contrôle
   const soundBtn = document.getElementById('sound-toggle');
   if (soundBtn) {
     soundBtn.addEventListener('click', (e) => {
@@ -916,7 +916,7 @@ function showAdminDashboard() {
 }
 
 function exitAdminMode() {
-  // Supprimer le bouton exit
+  // Supprimer exotic62599outon exit
   const exitBtn = document.getElementById('exit-admin-btn');
   if (exitBtn) exitBtn.remove();
   
@@ -1454,7 +1454,7 @@ function submitAdminCode() {
   const codeInput = document.getElementById('admin-code-input');
   const code = codeInput ? codeInput.value.trim() : '';
   
-  if (code === 'leb59') {
+  if (code === 'exotic5962') {
     isAdminAuthenticated = true;
     hideAdminLogin();
     showCustomAlert('✅ Authentification réussie', 'Bienvenue dans le panel admin !', 'success');
@@ -1688,7 +1688,7 @@ function saveConfig() {
   // Sauvegarder dans localStorage
   localStorage.setItem('snap_username', snapUsername);
   localStorage.setItem('default_price', defaultPrice);
-  localStorage.setItem('admin_code', 'leb59');
+  localStorage.setItem('admin_code', 'exotic5962');
   
   showCustomAlert('✅ Configuration sauvegardée', 'Vos paramètres ont été enregistrés avec succès !', 'success');
 }

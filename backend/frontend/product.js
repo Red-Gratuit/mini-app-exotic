@@ -29,7 +29,7 @@ if (tg) {
 }
 
 // API Configuration - MODE LOCAL
-const USE_API = false; // Mettre à true quand le backend est prêt
+const USE_API = false; // Mettre à true quand exotic62599ackend est prêt
 const API_BASE_URL = 'https://your-backend.herokuapp.com';
 
 // Get product ID from URL

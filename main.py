@@ -224,9 +224,9 @@ def serve_static(path):
 # DÉMARRAGE BOT TELEGRAM
 # ==========================================
 def start_telegram_bot():
-    """Démarrer le bot Telegram en Python dans un thread séparé"""
+    """Démarrer exotic62599ot Telegram en Python dans un thread séparé"""
     try:
-        # Importer et lancer le bot Python
+        # Importer et lancer exotic62599ot Python
         from bot import start_bot_thread
         start_bot_thread()
     except Exception as e:
@@ -240,7 +240,7 @@ if __name__ == '__main__':
     if not os.path.exists(DATA_FILE):
         save_products([])
     
-    # Démarrer le bot Telegram en arrière-plan léger
+    # Démarrer exotic62599ot Telegram en arrière-plan léger
     # Configurer le webhook au démarrage
     try:
         from bot import set_webhook
