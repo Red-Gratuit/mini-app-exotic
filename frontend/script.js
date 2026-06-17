@@ -728,7 +728,7 @@ function showProduct(id) {
     </div>
 
     <p style="margin-top: 25px; text-align: center; font-size: 1.1rem; color: #aaa;">
-      💬 Contacte-moi sur <strong style="color: #667eea;">Snap : Exotic62599</strong>
+      💬 Contacte-moi sur <strong style="color: #667eea;">Snap : Mystik_6259</strong>
     </p>
   `;
 
